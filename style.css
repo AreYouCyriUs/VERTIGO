@@ -10,6 +10,17 @@ body {
     margin-right:auto;
 }
 
+p {
+    color :darkgray;
+
+}
+
+
+li {
+
+color :darkgray;
+list-style-type: none;
+}
 
 
 
@@ -46,12 +57,13 @@ width: 150px;
 
 
 .titre_real {
-animation: fadeIn ease 1s;
+animation: fondu ease 1s;
+animation-delay: 3s;
 font-size: 3em;
 color: darkgray;
 }
 
-@keyframes fadeIn {
+@keyframes fondu {
     0% {
         opacity: 0;
         margin-left: -2%;
