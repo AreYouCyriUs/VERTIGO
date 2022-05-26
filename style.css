@@ -1,4 +1,8 @@
+.menu {
+display: flex;
+justify-content: space-between;
 
+}
 
 
 body {
@@ -15,16 +19,46 @@ p {
 
 }
 
+a {
+color: rgb(255 255 255 / 20%);
+opacity: 0.8;
+text-decoration: none;
+}
+
+a:hover {
+    opacity: 1;
+    transition: 0.5s;
+    color: white;
+}
+
 
 li {
-
-color :darkgray;
+color :rgb(200, 200, 200);
 list-style-type: none;
+}
+
+ul {
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.hashtags {
+    color: rgb(190, 190, 190);
+    opacity: 0.2;
+    padding-right: 1%;
+    font-size:xx-large;
+}
+
+.hashtags:hover {
+    opacity: 0.5;
 }
 
 
 
-.gallery {
+
+#galerie {
 /* Alignement des miniatures */
 display: flex;
 flex-wrap: wrap;
@@ -38,6 +72,9 @@ padding: 30px;
 .img_gallery {
 width: 300px;
 opacity: 1;
+border-radius: 14px;
+margin: 7px;
+
 }
 
 
@@ -57,10 +94,18 @@ width: 150px;
 
 
 .titre_real {
+opacity: 0;
 animation: fondu ease 1s;
-animation-delay: 3s;
+animation-delay: 1s;
+padding-left: 1%;
 font-size: 3em;
+
 color: darkgray;
+display: flex;
+justify-content: center;
+
+/* Empêche l'animation de se répéter */ 
+-webkit-animation-fill-mode: forwards;
 }
 
 @keyframes fondu {
@@ -73,4 +118,16 @@ color: darkgray;
         margin-left: 0%;
 
      }
+}
+
+
+
+/* SECTION WHO I AM */
+
+#who_i_am {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+
 }
