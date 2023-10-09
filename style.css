@@ -1,7 +1,8 @@
 .menu {
 display: flex;
 justify-content: space-between;
-
+flex-wrap: wrap;
+color: darkgrey;
 }
 
 
@@ -9,7 +10,7 @@ body {
     font: 1.2em "Montserrat", sans-serif;
     background-color: black;
 /* Centrer la page */
-    width:90%;
+    width:100%;
     margin-left:auto;
     margin-right:auto;
 }
@@ -41,8 +42,128 @@ ul {
 
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+/* - - - - - - - - - ACCUEIL :: GRID  - - - - - - - - - - */
+
+
+
+#grille_accueil {
+
+display: grid;
+grid-template-columns: 20% 20% 20% 20% 20%;
+grid-template-rows: 80px 80px 80px 80px 80px 80px 80px 80px 80px;
+
+
 
 }
+
+
+.logos_section_accueil {
+
+    display: flex;
+    grid-column: 5 / 4;
+    grid-row: 5;
+
+
+}
+
+.small_logo {
+
+width: 50px;
+height: 50px;
+margin: 3%;
+
+}
+
+.video_impact {
+grid-column: 4 / 6;
+grid-row: 2;
+font-size: 3rem;
+
+}
+
+@media only screen and (max-width: 800px) {
+
+
+    #grille_accueil {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    }
+
+    .logos_section_accueil { 
+        width: 100%;
+        justify-content: center;
+
+    }
+
+    .video_impact {
+    padding-top: 3%;
+    width: 100%;
+    font-size: 2em;
+    text-align: -webkit-center;
+}
+
+}
+
+
+/* - - - - - - - - - CAROUSEL - - - - - - - - - - */
+
+.video-mask {
+
+    margin-top: 27px;
+    border-radius: 137px;
+    margin-left: 4px;
+    /*
+    margin-left: 103%;
+    height: 589px;
+    width: 285px;
+    border-radius: 40px;
+    overflow: hidden;
+    */
+}
+
+
+
+
+.arrow {
+    display: flex;
+    color:white;
+    font-size:3em;
+    align-items: center;
+  }
+
+#carousel_taille {
+max-width: 1000px;
+margin: auto;
+}
+
+
+.catalog_vignettes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+
+/* - - - - - - - - - PREZ - - - - - - - - - - */
+
+.prez {
+display: flex;
+color: white;
+align-items: center;
+flex-direction: column;
+background-image: url("../CV.COM/assets/img_prods/header_img_1");
+}
+
+
+
+/* - - - - - - - - - HASHAGTS - - - - - - - - - - */
+
 
 .hashtags {
     color: rgb(190, 190, 190);
@@ -56,7 +177,7 @@ ul {
 }
 
 
-
+/* - - - - - - - - - GALERIE - - - - - - - - - - */
 
 #galerie {
 /* Alignement des miniatures */
@@ -67,33 +188,88 @@ justify-content: center;
 padding: 30px;
 }
 
-
-
 .img_gallery {
 width: 300px;
 opacity: 1;
 border-radius: 14px;
 margin: 7px;
-
 }
-
 
 .img_gallery:hover {
     opacity: 0.6;
     transition: 0.3s;
 }
 
+/* - - - - - - - - - SERVICES - - - - - - - - - - */
 
+.liste_services {
 
-.ref_clients {
-width: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
 }
 
 
-/* TEXTES */
+.logos_services {
+
+    width: 80px;
+}
+
+
+.mes_services {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:white;
+}
+
+
+.bloc_services {
+
+border: solid white 4px;
+border-radius: 20px;
+
+width: 150px;
+height: 150px;
+
+margin: 10px;
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+}
+
+
+
+.bloc_services:hover {
+
+    font-size: large;
+    border: 9px solid white ;
+    transition-duration: 0.8s;
+    
+    cursor: pointer;
+
+    }
+
+
+
+
+
+.ref_clients {
+width: 150px;
+margin: 10px;
+}
+
+
+/* - - - - - - - - - TEXTES - - - - - - - - - - */
 
 
 .titre_real {
+margin-top: 3%;
 opacity: 0;
 animation: fondu ease 1s;
 animation-delay: 1s;
@@ -122,12 +298,32 @@ justify-content: center;
 
 
 
-/* SECTION WHO I AM */
+/* - - - - - - - - QUI SUIS-JE - - - - - - - - - */
 
 #who_i_am {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-
+    justify-content: space-between;
+    font: 1.2em "Montserrat", sans-serif;
+    padding-top: 5%;
 
 }
+
+.txt_contact {
+
+    display: flex;
+    font-size: x-large;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+/* - - - - - - - - FOOTER - - - - - - - - - */
+
+footer {
+width: 100%;
+background-color: rgb(52, 52, 52);
+color: rgb(65, 65, 65);
+      }
