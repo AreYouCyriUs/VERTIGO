@@ -51,19 +51,36 @@ ul {
 
 .tuile {
 display: inline-block;
-border: 1px solid white;
+background-color: rgb(116, 116, 116);
 height: 500px;
 width: 200px;
 border-radius: 20px;
+
 }
+
+
+.tuile:hover {
+   
+    background-color: rgb(255, 255, 255);
+    opacity: 70%;
+    transition:opacity 1s, visibility 1s;
+    
+    }
+    
+
+.groupe_tuiles {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+
+}
+
 
 #grille_accueil {
 
 display: grid;
 grid-template-columns: 20% 20% 20% 20% 20%;
 grid-template-rows: 80px 80px 80px 80px 80px 80px 80px 80px 80px;
-
-
 
 }
 
