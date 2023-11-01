@@ -136,6 +136,21 @@ font-size: 3rem;
 
 /* - - - - - - - - - CAROUSEL - - - - - - - - - - */
 
+
+.carousel-container {
+    width: 800px;
+    height: 800px;
+    overflow: hidden;
+}
+.carousel {
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+.carousel-slide {
+    width: 800px;
+    height: 800px;
+}
+
 .video-mask {
 
     margin-top: 27px;
