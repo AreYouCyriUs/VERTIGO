@@ -137,20 +137,13 @@ font-size: 3rem;
 /* - - - - - - - - - CAROUSEL - - - - - - - - - - */
 
 
-.carousel-container {
 
-   
-    width: auto;
-    height: 400px;
-    overflow: hidden;
-}
-.carousel {
-    display: flex;
-    transition: transform 1s ease-in-out;
-}
-.carousel-slide {
-    width: 800px;
-    height: 800px;
+.video {
+
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 .video-mask {
