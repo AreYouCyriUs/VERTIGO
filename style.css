@@ -45,6 +45,20 @@ ul {
     flex-wrap: wrap;
 }
 
+/* - - - - - - - - - HEADER :: CARROUSSEL  - - - - - - - - - - */
+
+
+
+
+.slide {
+
+width: 100%;
+overflow: hidden;
+}
+
+
+
+
 
 /* - - - - - - - - - ACCUEIL :: GRID  - - - - - - - - - - */
 
